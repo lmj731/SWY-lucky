@@ -1,0 +1,117 @@
+
+body {
+	font: 1em/150% Arial, Helvetica, sans-serif;
+}
+a {
+	color: #669;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}
+ 
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#pagewrap {
+	padding: 5px;
+	width: 1450px;
+	margin: 20px auto;
+}
+#header {
+	height: 150px;
+}
+#content {
+	width: 200px;
+	float: left;
+}
+#statistical p{
+    float: left;
+}
+#sidebar {
+	width: 1200px;
+	float: right;
+}
+#random {
+	margin-left: 100px;
+    width:1000px;
+    height: 360px;
+}
+#allres {
+    width: 90px;
+    height: 100%;
+    float: left;
+}
+#allres img{
+    margin-top: 60px;
+    width: 110%;
+}
+#footer {
+	clear: both;
+}
+ 
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+ 
+}
+ 
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+ 
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+ 
+}
+ 
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+ 
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+ 
+}
+ 
+/* border & guideline (you can ignore these) */
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+#header, #content, #sidebar {
+	margin-bottom: 5px;
+}
+#pagewrap, #header, #content, #sidebar, #footer {
+	border: solid 1px #ccc;
+}
+ 

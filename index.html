@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<title>Demo</title>
+ 
+<!-- css3-mediaqueries.js for IE8 or older -->
+<!--[if lt IE 9]>
+	<script src="http://cdn.staticfile.org/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.js"></script>
+<![endif]-->
+ 
+<link rel="stylesheet" type="text/css" href="./style.css" /> 
+
+</head>
+<body>
+    <div id="pagewrap">
+        <div id="header">
+            <h1>食物语召唤模拟器</h1>
+            <p>祝你好运</p>
+        </div>
+
+        <div id="content">
+            <h2>召唤</h2>
+            <button onclick="randomnum(0)">单抽</button>
+            <button onclick="randomnum(1)">十连抽</button>
+            <div id="statistical">
+                <p>消耗 魂芯：<t id="hun">0</t></p>
+                <p>御：<t id="lev3">0</t></p>
+                <p>珍：<t id="lev2">0</t></p>
+                <p>尚：<t id="lev1">0</t></p>
+                <p>良：<t id="lev0">0</t></p>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <h3>结果</h3>
+            <div id="random">
+
+            </div>
+        </div>
+        
+        <div id="footer">
+            <h4>Footer</h4>
+        </div>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
